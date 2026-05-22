@@ -1,0 +1,106 @@
+/* 🌿 Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://i1-c.pinimg.com/1200x/e1/1d/43/e11d43ddba9f60b850cb3d86de575e59.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* soft overlay for Ghibli feel */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.194);
+  backdrop-filter: blur(6px);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* main container */
+.container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+/* title */
+.title {
+    font-family: 'DynaPuff';
+    font-size: 2.5rem;
+    color: #08200a;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-family: 'Schoolbell';
+    color: #175528;
+    margin-bottom: 25px;
+}
+
+/* glass card */
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  width: 320px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* labels */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #5f4221;
+  font-weight: 500;
+}
+
+/* dropdowns */
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cdd7cf;
+  background: #f7faf7;
+  outline: none;
+}
+
+/* button */
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #6b8f71;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #557a5e;
+  transform: scale(1.03);
+}
+
+/* output */
+.output {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f0f5f1;
+  color: #2f3e34;
+  min-height: 20px;
+}
+label, select, button {
+  font-family: 'Segoe UI', sans-serif;
+}

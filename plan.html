@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Study Mood Planner</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@300;400;500;600&family=Schoolbell&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Card -->
+    <div class="card">
+        <h1 class="title">
+        <i class="fa-solid fa-leaf"></i>
+        Study Mood Planner
+        </h1>
+
+        <p class="subtitle">A calm space to plan your study sessions 🌿</p>
+
+      <label>How are you feeling?</label>
+      <select id="mood">
+        <option value="tired">😴 Tired</option>
+        <option value="neutral">😐 Neutral</option>
+        <option value="energetic">🔥 Energetic</option>
+      </select>
+
+      <label>How much time do you have?</label>
+      <select id="time">
+        <option value="10min">10 minutes</option>
+        <option value="30min">30 minutes</option>
+        <option value="1hr">1 hour</option>
+      </select>
+
+      <button onclick="getPlan()">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        Get Study Plan
+      </button>
+
+      <div id="output" class="output"></div>
+
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
